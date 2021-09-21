@@ -58,7 +58,7 @@ class CategorySeeder extends Seeder
                 'primary_category_id' => 2
             ],
             [
-                'name' => 'おむつケーk',
+                'name' => 'おむつケーキ',
                 'sort_order' => 6,
                 'primary_category_id' => 2
             ],
