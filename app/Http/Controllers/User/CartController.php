@@ -91,7 +91,7 @@ class CartController extends Controller
             ]);
         }
 
-        dd('test');
+        // dd('test');
 
         \Stripe\Stripe::setApiKey(env('STRIPE_SECRET_KEY'));
 
@@ -103,7 +103,7 @@ class CartController extends Controller
             'cancel_url' => route('user.cart.index'),
         ]);
 
-        $public = env('STRIPE_PUBLIC_KEY');
+        $publicKey = env('STRIPE_PUBLIC_KEY');
 
         return view('user.checkout',
             compact('session', 'publicKey'));
