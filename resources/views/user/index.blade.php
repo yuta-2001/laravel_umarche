@@ -90,8 +90,8 @@
         this.form.submit()
     })
 
-    const pagenate = document.getElementById('pagenation')
-    pagenate.addEventListener('change', function(){
+    const paginate = document.getElementById('pagination')
+    paginate.addEventListener('change', function(){
         this.form.submit()
     })
 </script>
