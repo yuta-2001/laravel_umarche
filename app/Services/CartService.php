@@ -11,7 +11,6 @@ class CartService
     {
         $products = [];
 
-
         foreach($items as $item)
         {
             $p = Product::findOrFail($item->product_id);
@@ -27,7 +26,7 @@ class CartService
             array_push($products, $result); //配列に追加
         }
 
-        dd($products);
+        // dd($products);
         return $products;
     }
 }
